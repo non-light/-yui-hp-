@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YUi — Official</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;700&family=Pacifico&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-y">Y</span><span class="logo-ui">Ui</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#contents">Contents</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="#games">Games</a>
+        <a href="#chat">Chat</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#about">About</a>
+      <a href="#contents">Contents</a>
+      <a href="pages/blog.html">Blog</a>
+      <a href="#games">Games</a>
+      <a href="#chat">Chat</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="blob blob-pink"></div>
+      <div class="blob blob-green"></div>
+      <div class="blob blob-mint"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-sub">Welcome to the world of</p>
+        <h1 class="hero-title">
+          <span class="ht-y">Y</span><span class="ht-ui">Ui</span>
+        </h1>
+        <p class="hero-catch">歌って、遊んで、話しかけて。<br />あなただけのYUiに会いに来て。</p>
+        <div class="hero-buttons">
+          <a href="#contents" class="btn btn-primary">コンテンツを見る</a>
+          <a href="#chat" class="btn btn-outline">YUiと話す</a>
+        </div>
+      </div>
+      <div class="hero-chara">
+        <div class="chara-glow"></div>
+        <img src="assets/images/yui.png" alt="YUi" class="chara-img" id="charaImg" />
+        <div class="chara-sparkles" id="sparkles"></div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <h2 class="section-title">YUiって誰？</h2>
+      <div class="about-grid">
+        <div class="about-card card-fade">
+          <div class="about-icon">🌸</div>
+          <h3>Virtual Idol</h3>
+          <p>ピンクとグリーンのグラデーションヘアが特徴のバーチャルアイドル。歌・ゲーム・おしゃべりが大好き。</p>
+        </div>
+        <div class="about-card card-fade">
+          <div class="about-icon">🎵</div>
+          <h3>Music</h3>
+          <p>オリジナル楽曲を制作中。J-POPからエレクトロまで幅広いジャンルをカバーします。</p>
+        </div>
+        <div class="about-card card-fade">
+          <div class="about-icon">🎮</div>
+          <h3>Gaming</h3>
+          <p>YUiのオリジナルゲームで遊べる。ブラウザで気軽にプレイ可能なミニゲームを順次公開。</p>
+        </div>
+        <div class="about-card card-fade">
+          <div class="about-icon">💬</div>
+          <h3>AI Chat</h3>
+          <p>AIを活用したYUiとのリアルタイムおしゃべり機能。いつでも気軽に話しかけてね。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTENTS ========== -->
+  <section class="contents section" id="contents">
+    <div class="container">
+      <div class="section-label">Contents</div>
+      <h2 class="section-title">コンテンツ</h2>
+      <div class="contents-grid">
+
+        <!-- Blog -->
+        <a href="#blog" class="content-card cc-blog card-fade">
+          <div class="cc-bg"></div>
+          <div class="cc-icon">📝</div>
+          <div class="cc-body">
+            <h3>Blog</h3>
+            <p>YUiの日常・制作日記・活動レポートを発信中</p>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+
+        <!-- Games -->
+        <a href="#games" class="content-card cc-games card-fade">
+          <div class="cc-bg"></div>
+          <div class="cc-icon">🎮</div>
+          <div class="cc-body">
+            <h3>Games</h3>
+            <p>YUiが登場するオリジナルミニゲームを楽しもう</p>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+
+        <!-- Chat -->
+        <a href="#chat" class="content-card cc-chat card-fade">
+          <div class="cc-bg"></div>
+          <div class="cc-icon">💬</div>
+          <div class="cc-body">
+            <h3>YUiとおしゃべり</h3>
+            <p>AIのYUiとリアルタイムでおしゃべりしよう</p>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+
+        <!-- Coming Soon placeholder -->
+        <div class="content-card cc-soon card-fade">
+          <div class="cc-bg"></div>
+          <div class="cc-icon">✨</div>
+          <div class="cc-body">
+            <h3>Coming Soon</h3>
+            <p>新しいコンテンツを準備中…お楽しみに！</p>
+          </div>
+          <div class="cc-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG ========== -->
+  <section class="blog section" id="blog">
+    <div class="container">
+      <div class="section-label">Blog</div>
+      <h2 class="section-title">最新ブログ</h2>
+      <div class="blog-grid">
+
+        <article class="blog-card card-fade">
+          <div class="blog-thumb blog-thumb-1">
+            <span class="blog-tag">お知らせ</span>
+          </div>
+          <div class="blog-body">
+            <time>2026.06.01</time>
+            <h3>ホームページがオープンしました！</h3>
+            <p>こんにちは！YUiのオフィシャルサイトがついにオープン。これからどんどん更新していくのでよろしくね♪</p>
+            <a href="pages/blog-post-1.html" class="read-more">続きを読む →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-fade">
+          <div class="blog-thumb blog-thumb-2">
+            <span class="blog-tag">制作日記</span>
+          </div>
+          <div class="blog-body">
+            <time>2026.05.28</time>
+            <h3>新曲制作中！タイトルは内緒♪</h3>
+            <p>最近ずっとスタジオにこもって新曲を作ってます。ポップでちょっとエモい感じの曲になりそう！</p>
+            <a href="pages/blog-post-2.html" class="read-more">続きを読む →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-fade">
+          <div class="blog-thumb blog-thumb-3">
+            <span class="blog-tag">ゲーム</span>
+          </div>
+          <div class="blog-body">
+            <time>2026.05.20</time>
+            <h3>ミニゲーム開発スタート！</h3>
+            <p>YUiが主人公のかわいいミニゲームを開発中です。ブラウザだけで遊べるから誰でも気軽にプレイできるよ。</p>
+            <a href="pages/blog-post-3.html" class="read-more">続きを読む →</a>
+          </div>
+        </article>
+
+      </div>
+      <div class="section-more">
+        <a href="#" class="btn btn-outline">すべての記事を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GAMES ========== -->
+  <section class="games section" id="games">
+    <div class="container">
+      <div class="section-label">Games</div>
+      <h2 class="section-title">ゲームで遊ぼう</h2>
+      <div class="games-grid">
+
+        <div class="game-card card-fade">
+          <div class="game-thumb gt-1">
+            <div class="game-thumb-overlay">
+              <span class="play-btn">▶ Play</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3>YUiのリズムゲーム</h3>
+            <p>YUiの音楽に合わせてリズムよくタップ！</p>
+            <span class="game-tag">リズム</span>
+            <span class="game-tag coming">Coming Soon</span>
+          </div>
+        </div>
+
+        <div class="game-card card-fade">
+          <div class="game-thumb gt-2">
+            <div class="game-thumb-overlay">
+              <span class="play-btn">▶ Play</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3>YUiきせかえ</h3>
+            <p>YUiのコーデを自由にカスタマイズしよう</p>
+            <span class="game-tag">着せ替え</span>
+            <span class="game-tag coming">Coming Soon</span>
+          </div>
+        </div>
+
+        <div class="game-card card-fade">
+          <div class="game-thumb gt-3">
+            <div class="game-thumb-overlay">
+              <span class="play-btn">▶ Play</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3>YUiクイズ</h3>
+            <p>YUiのことをどれだけ知ってる？挑戦しよう！</p>
+            <span class="game-tag">クイズ</span>
+            <span class="game-tag coming">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CHAT ========== -->
+  <section class="chat-section section" id="chat">
+    <div class="container">
+      <div class="section-label">AI Chat</div>
+      <h2 class="section-title">YUiとおしゃべり</h2>
+      <p class="section-desc">AIのYUiにいつでも話しかけてね。質問でも雑談でもなんでもOK！</p>
+
+      <div class="chat-widget card-fade">
+        <div class="chat-header">
+          <div class="chat-avatar">
+            <img src="assets/images/yui.png" alt="YUi" />
+          </div>
+          <div class="chat-header-info">
+            <span class="chat-name">YUi</span>
+            <span class="chat-status"><span class="status-dot"></span> オンライン</span>
+          </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="msg msg-yui">
+            <div class="msg-bubble">
+              こんにちは！YUiだよ～🌸<br />何でも話しかけてね！
+            </div>
+            <time>Today</time>
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <input type="text" id="chatInput" placeholder="メッセージを入力…" autocomplete="off" />
+          <button id="chatSend" class="chat-send-btn" aria-label="送信">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-desc">コラボ・お仕事のご依頼はこちらからどうぞ。</p>
+
+      <form class="contact-form card-fade" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cName">お名前</label>
+            <input type="text" id="cName" placeholder="山田 花子" required />
+          </div>
+          <div class="form-group">
+            <label for="cEmail">メールアドレス</label>
+            <input type="email" id="cEmail" placeholder="hello@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cSubject">件名</label>
+          <input type="text" id="cSubject" placeholder="コラボのご相談" required />
+        </div>
+        <div class="form-group">
+          <label for="cMessage">メッセージ</label>
+          <textarea id="cMessage" rows="5" placeholder="詳細をご記入ください…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-y">Y</span><span class="logo-ui">Ui</span>
+      </div>
+      <p class="footer-copy">© 2026 YUi Official. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Twitter/X">𝕏</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="TikTok">♪</a>
+        <a href="#" aria-label="Instagram">◈</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

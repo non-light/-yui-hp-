@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find ~/Desktop ~/Downloads ~/Pictures -name \"*.png\" -newer /tmp 2>/dev/null | head -10)",
+      "Bash(cp \"/Users/noriko/Desktop/立ち絵-YUI.png\" \"/Users/noriko/Workspace/YUi HP/assets/images/yui.png\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
