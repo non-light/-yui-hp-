@@ -411,6 +411,109 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   PROFILE
+=========================== */
+.profile {
+  background: linear-gradient(180deg, var(--white) 0%, var(--pink-pale) 100%);
+}
+.profile-wrap {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* photo */
+.profile-photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.profile-photo-glow {
+  position: absolute;
+  width: 80%;
+  padding-bottom: 80%;
+  border-radius: 50%;
+  background: var(--grad-soft);
+  filter: blur(50px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: glowPulse 4s ease-in-out infinite alternate;
+}
+.profile-photo img {
+  position: relative;
+  z-index: 2;
+  max-height: 460px;
+  width: auto;
+  filter: drop-shadow(0 16px 40px rgba(255,110,180,0.25));
+}
+
+/* info table */
+.profile-info { width: 100%; }
+.profile-table {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 12px 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,110,180,0.1);
+  margin-bottom: 24px;
+}
+.profile-row {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px dashed #f0e0ea;
+}
+.profile-row:last-child { border-bottom: none; }
+.profile-row dt {
+  flex-shrink: 0;
+  width: 96px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--pink);
+  letter-spacing: 0.04em;
+}
+.profile-row dd {
+  font-size: 0.98rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+.profile-message {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(110,207,138,0.18);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text);
+  position: relative;
+}
+.profile-message::before {
+  content: '💬';
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  font-size: 1.3rem;
+  background: var(--white);
+  padding: 0 6px;
+}
+
+@media (max-width: 768px) {
+  .profile-wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .profile-photo img { max-height: 340px; }
+  .profile-table { padding: 8px 22px; }
+  .profile-row { gap: 12px; padding: 14px 0; }
+  .profile-row dt { width: 76px; font-size: 0.78rem; }
+  .profile-row dd { font-size: 0.9rem; }
+}
+
+/* ===========================
    CONTENTS
 =========================== */
 .contents {
