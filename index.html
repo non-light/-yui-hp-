@@ -105,9 +105,9 @@
   </section>
 
   <!-- ========== PROFILE ==========
-       ↓↓↓ ここがプロフィール欄です。
-       「★」マークのところの文字を書き換えるだけでOK！
-       （< > で囲まれた部分はさわらないでね）
+       ※プロフィールの中身は assets/data/profile.txt から自動で読み込まれます。
+         内容を変えたいときは、そのファイルだけを書き換えてください。
+         （このHTMLはさわらなくて大丈夫です）
   -->
   <section class="profile section" id="profile">
     <div class="container">
@@ -122,46 +122,10 @@
           <img src="assets/images/yui.png" alt="YUi" />
         </div>
 
-        <!-- 右側：プロフィール項目 -->
+        <!-- 右側：プロフィール項目（profile.txt から自動表示） -->
         <div class="profile-info">
-          <dl class="profile-table">
-
-            <div class="profile-row">
-              <dt>名前</dt>
-              <dd>★YUi（ゆい）</dd>
-            </div>
-
-            <div class="profile-row">
-              <dt>誕生日</dt>
-              <dd>★1月1日</dd>
-            </div>
-
-            <div class="profile-row">
-              <dt>身長</dt>
-              <dd>★158cm</dd>
-            </div>
-
-            <div class="profile-row">
-              <dt>出身</dt>
-              <dd>★バーチャル空間</dd>
-            </div>
-
-            <div class="profile-row">
-              <dt>好きなもの</dt>
-              <dd>★音楽・ゲーム・おしゃべり</dd>
-            </div>
-
-            <div class="profile-row">
-              <dt>趣味</dt>
-              <dd>★作曲・お散歩</dd>
-            </div>
-
-          </dl>
-
-          <!-- ひとことメッセージ（自由に書き換えてね） -->
-          <p class="profile-message">
-            ★はじめまして、YUiです！歌って遊んでおしゃべりするのが大好き。いつでも会いに来てね🌸
-          </p>
+          <dl class="profile-table" id="profileTable"></dl>
+          <p class="profile-message" id="profileMessage"></p>
         </div>
 
       </div>

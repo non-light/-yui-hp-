@@ -1,3 +1,42 @@
+/* ===== PROFILE (load from assets/data/profile.txt) ===== */
+(function loadProfile() {
+  const table = document.getElementById('profileTable');
+  const messageEl = document.getElementById('profileMessage');
+  if (!table) return; // プロフィール欄がないページでは何もしない
+
+  fetch('assets/data/profile.txt?v=' + Date.now()) // ?v=... は毎回最新を読み込むためのおまじない
+    .then(res => res.text())
+    .then(text => {
+      table.innerHTML = '';
+      text.split('\n').forEach(rawLine => {
+        const line = rawLine.trim();
+        if (!line || line.startsWith('#')) return;       // 空行・メモ行はスキップ
+        const sep = line.search(/[：:]/);                 // 全角／半角コロンどちらもOK
+        if (sep === -1) return;
+        const key = line.slice(0, sep).trim();
+        const val = line.slice(sep + 1).trim();
+
+        if (key === 'ひとこと') {                          // ひとことはメッセージ欄へ
+          if (messageEl) messageEl.textContent = val;
+          return;
+        }
+
+        const row = document.createElement('div');
+        row.className = 'profile-row';
+        const dt = document.createElement('dt');
+        dt.textContent = key;
+        const dd = document.createElement('dd');
+        dd.textContent = val;
+        row.appendChild(dt);
+        row.appendChild(dd);
+        table.appendChild(row);
+      });
+    })
+    .catch(() => {
+      if (messageEl) messageEl.textContent = 'プロフィールを読み込めませんでした。';
+    });
+})();
+
 /* ===== HEADER SCROLL ===== */
 const header = document.getElementById('site-header');
 window.addEventListener('scroll', () => {
